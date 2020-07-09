@@ -1,5 +1,3 @@
-
-
 $.ajax({
     url:'../../cart/interface/showlist.php',
     dataType:'json',
@@ -69,8 +67,9 @@ $.ajax({
         $('.change-goods-num p').eq(1).click(function(){
             change++
             $('.change-goods-num span').first().text(change)
-            $('cart-total i').text(change)
-            total=parseInt(change)*parseInt(price)
+            console.log("change")
+            $('.cart-total i').text(change)
+            total= parseInt(change)*parseInt(price)
             $('.item-box .goods-total').first().text(total+'元')
             $('.total-price em').text(total)
             $.get('../../cart/interface/updatewq.php',{

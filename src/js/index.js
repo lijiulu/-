@@ -83,3 +83,4 @@ var mySwiper = new Swiper ('.swiper-container', {
   })
   
   $('.page-main a').attr('href','./details.html')
+ 

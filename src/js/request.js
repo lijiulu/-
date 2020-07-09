@@ -20,7 +20,7 @@
             if(xhr.readyState==4&&xhr.status==200){
                 console.log(xhr.responseText)
                 if(xhr.responseText == 1){
-                    window.location.href="./INE1.html" 
+                    window.location.href="./index.html" 
                 }else{
                     alert('账号或密码不正确！')
                 }
